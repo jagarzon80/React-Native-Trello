@@ -1,18 +1,25 @@
 import { View, Text, StyleSheet, SafeAreaView } from "react-native";
+import AntDesign from "@expo/vector-icons/AntDesign";
 
-export default function TaskListItem() {
+export default function TaskListItem({ task }) {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>First Task</Text>
+      <Text style={styles.text}>{task.description}</Text>
+      <AntDesign name="close" size={16} color="gray" />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "black",
+    backgroundColor: "#1D2125",
+    borderRadius: 5,
+    flexDirection: "row",
+    justifyContent: "space-between",
+    padding: 15,
   },
   text: {
     color: "white",
+    fontSize: 16,
   },
 });
