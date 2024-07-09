@@ -1,12 +1,12 @@
-import { SafeAreaView, StyleSheet } from "react-native";
-import TaskListItem from "./src/components/TaskListItem";
+import { SafeAreaView, StyleSheet, View } from "react-native";
+import TaskList from "./src/components/TaskList";
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <TaskListItem task={{ description: "First task" }} />
-      <TaskListItem task={{ description: "Second task" }} />
-      <TaskListItem task={{ description: "Third task" }} />
+      <View style={{ padding: 10, marginVertical: 15 }}>
+        <TaskList />
+      </View>
     </SafeAreaView>
   );
 }

@@ -1,5 +1,5 @@
-import { View, Text, StyleSheet, SafeAreaView } from "react-native";
 import AntDesign from "@expo/vector-icons/AntDesign";
+import { StyleSheet, Text, View } from "react-native";
 
 export default function TaskListItem({ task }) {
   return (
