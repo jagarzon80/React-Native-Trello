@@ -24,7 +24,7 @@ export default function TaskList() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Todo</Text>
+      <Text style={styles.title}>Todo</Text>
       {/* The List of tasks */}
       <FlatList
         data={tasks}
@@ -36,7 +36,7 @@ export default function TaskList() {
         onChangeText={setNewTask}
         placeholder="New Task"
         placeholderTextColor="gray"
-        style={styles.textinput}
+        style={styles.input}
         value={newTask}
       />
       <Button title="Add task" onPress={createTask} />
@@ -50,14 +50,15 @@ const styles = StyleSheet.create({
     padding: 10,
     borderRadius: 5,
     gap: 10,
+    marginVertical: 30,
   },
-  text: {
+  title: {
     color: "white",
     fontWeight: "bold",
     fontSize: 20,
     marginVertical: 10,
   },
-  textinput: {
+  input: {
     color: "white",
     padding: 15,
     backgroundColor: "#1D2125",
