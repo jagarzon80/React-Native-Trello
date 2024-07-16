@@ -1,6 +1,6 @@
 import { PropsWithChildren } from "react";
-import Realm from "realm";
+import { RealmProvider } from "@realm/react";
 
-export default function RealmProvider({ children }: PropsWithChildren) {
-  return <>{children}</>;
+export default function RealmCustomProvider({ children }: PropsWithChildren) {
+  return <RealmProvider>{children}</RealmProvider>;
 }
