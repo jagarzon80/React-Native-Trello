@@ -17,7 +17,8 @@
         "APP_ICON": "./assets/icon.png",
         "APP_NAME": "Trello Juli"
       },
-      "distribution": "internal"
+      "distribution": "internal",
+      "developmentClient": true
     },
     "production": {}
   },
